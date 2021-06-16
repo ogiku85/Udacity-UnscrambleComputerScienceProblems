@@ -1,0 +1,27 @@
+UDACITY Project: Unscramble Computer Science Problems
+
+TASK 0:
+Given that there are t texts and c calls the big O of task 0 is O(t + c). Accessing an item in a list via an index happens in constant time O(1).
+Time Complexity : O(1)
+Space Complexity : O(t + c) – Space required to store t texts and c calls in memory.
+
+TASK 1: 
+In other to get the total unique number of telephones numbers I used a dictionary which prevented having duplicates keys/phone numbers which was loaded by looping over t texts and c calls giving a big O of O(t + c) for loading the dictionary and accessing the number of unique phone numbers(length of dictionary) is constant time O(1). Hence the big O of task 1 is O(t + c).
+Time Complexity : O(t + c)
+Space Complexity : O(t + c) – Space required to store t texts and c calls in memory. Although other items were store in memory for easy computation in comparison with the text and call list they appear insignificant.
+
+TASK 2:
+In other to get the phone number that spent the longest time I looped through n calls and made comparison of new time spent against an initialised max time which is updated when a new max time is encountered. As a result of looping through the entire list the big O of task 2 is O(n).
+Time Complexity : O(n)
+Space Complexity : O(t + c) – Space required to store t texts and c calls in memory. Although other items were store in memory for easy computation in comparison with the text and call list they appear insignificant.
+
+TASK 3 :
+In other to create a unique list of area code called by residents of Bangalore, I looped through the entire call list of n calls which gives a big O of O(n). However sorting the resulting list(using the builtin sorted method) in order to display it in lexicographic order is an operation with a big O of O(nlogn).
+Hence the big O of task 3 is O(nlogn).
+Time Complexity : O(nlogn)
+Space Complexity : O(t + c) – Space required to store t texts and c calls in memory. Although other items were store in memory for easy computation in comparison with the text and call list they appear insignificant.
+
+Task 4: 
+In other to generate a possible list of marketers I looped through the entire call list of n calls which gives a big O of O(n). However sorting the resulting list(using the builtin sorted method) in order to display it in lexicographic order is an operation with a big O of O(nlogn).
+Time Complexity : O(nlogn)
+Space Complexity : O(t + c) – Space required to store t texts and c calls in memory. Although other items were store in memory for easy computation in comparison with the text and call list they appear insignificant.
