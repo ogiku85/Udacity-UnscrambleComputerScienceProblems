@@ -1,17 +1,18 @@
 UDACITY Project: Unscramble Computer Science Problems
 
 TASK 0:
-Given that there are t texts and c calls the big O of task 0 is O(t + c). Accessing an item in a list via an index happens in constant time O(1).
+Accessing an item in a list via an index happens in constant time O(1).
 Time Complexity : O(1)
 Space Complexity : O(t + c) – Space required to store t texts and c calls in memory.
 
 TASK 1: 
-In other to get the total unique number of telephones numbers I used a dictionary which prevented having duplicates keys/phone numbers which was loaded by looping over t texts and c calls giving a big O of O(t + c) for loading the dictionary and accessing the number of unique phone numbers(length of dictionary) is constant time O(1). Hence the big O of task 1 is O(t + c).
+In other to get the total unique number of telephones numbers I used a set which prevented having duplicate phone numbers which was loaded by looping over t texts and c calls giving a big O of O(t + c) for loading the set and accessing the number of unique phone numbers(length of set) is constant time O(1). Hence the big O of task 1 is O(t + c).
 Time Complexity : O(t + c)
 Space Complexity : O(t + c) – Space required to store t texts and c calls in memory. Although other items were store in memory for easy computation in comparison with the text and call list they appear insignificant.
 
 TASK 2:
-In other to get the phone number that spent the longest time I looped through n calls and made comparison of new time spent against an initialised max time which is updated when a new max time is encountered. As a result of looping through the entire list the big O of task 2 is O(n).
+In other to get the phone number that spent the longest time I looped through n calls and populated a dictionary with each unique phone number and the total time it spent on making and receiving calls. As a result of looping through the entire list the big O of task 2 is O(n). Although I used
+the max function which also has a big O(d) where d is the lenght of the dictionary in my solution, in the scheme of things d is less than n.
 Time Complexity : O(n)
 Space Complexity : O(t + c) – Space required to store t texts and c calls in memory. Although other items were store in memory for easy computation in comparison with the text and call list they appear insignificant.
 
